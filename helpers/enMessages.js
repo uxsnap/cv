@@ -13,8 +13,6 @@ export default {
 	myLinks: 'My links',
 	locked: 'Locked',
 	required: 'Required skills for Frontend development',
-	laravel: `Laravel was in demand for some of my tasks on the previous job.In cause of the lack of backend developer, I took his position by learning this framework.
-			Although I only find myself as a mature in this technology`,
 	bootstrap: `Best CSS framework for me. Vast and flexible - perfect for layout-making routine`,
 	less: 'One of the CSS preprocessors that I have been using. Sass is prefferable',
 	react: `Technology that I'm using with TypeScript right now.

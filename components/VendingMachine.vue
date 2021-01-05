@@ -72,8 +72,7 @@ export default {
     },
     resizeWalls() {
       this.walls = createWalls(
-        this.$refs.vendingContainer,
-        // this.$refs.vendingContainer
+        this.$refs.vendingContainer
       );
 
       World.add(this.world, [
@@ -118,7 +117,6 @@ export default {
     },
     lastDeleted(newVal, oldVal) {
       if (newVal === oldVal) return;
-      console.log(newVal)
       World.remove(this.world, this.dataBalls.find((item) => item.id === newVal));
 
     }
