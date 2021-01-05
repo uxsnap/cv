@@ -1,0 +1,23 @@
+.langs-switch
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	border: 1px solid
+	border-radius: 4px
+	padding: 5px
+	&__lang
+		display: flex
+		align-items: center
+		padding: 8px
+		border-radius: 4px
+		&.active
+			background-color: $fontColor
+			color: $mainBg
+			transition: .5s all
+		img
+			width: 20px
+			height: 15px
+			margin-right: 10px

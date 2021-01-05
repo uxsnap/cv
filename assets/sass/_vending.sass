@@ -1,0 +1,77 @@
+.vending
+	@media (max-width: 900px)
+		display: none !important
+	position: relative
+	height: 100%
+	max-height: $maxSize
+	max-width: 400px
+	margin: auto
+	&__container,
+	&__glass
+		height: 100%
+		width: 100%
+		top: 50px
+		left: 50%
+		position: absolute
+		transform: translateX(-50%)
+		max-width: 214px
+		max-height: 260px
+		pointer-events: none
+	&__glass
+		border-radius: none
+		background-color: lightblue
+		opacity: .3
+	&__image
+		width: $maxSize
+		height: $maxSize
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 0
+		pointer-events: none
+		z-index: 50
+	&__coins
+		max-height: 100px
+		max-width: 100px
+		display: flex
+		align-items: center
+		font-size: 14px
+		position: absolute
+		bottom: 80px
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 50
+		img
+			width: 20px
+			height: 20px
+		span
+			margin-left: 8px
+	&__lever
+		position: absolute
+		left: 70%
+		bottom: 40px
+		display: flex
+		align-items: center
+		flex-direction: column
+		transform: rotate(30deg)
+		cursor: grab
+		transform-origin: bottom
+		transition: .5s transform
+		&.active
+			pointer-events: none
+			transform: rotate(60deg)
+		&.disabled
+			pointer-events: none
+		&:active
+			cursor: grabbing
+		&-circle
+			width: 25px
+			height: 25px
+			border-radius: 50%
+			background: red
+			margin-bottom: -20px
+			z-index: 100
+		&-stick
+			height: 100px
+			width: 10px
+			background-color: #e3e4e9

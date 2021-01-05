@@ -1,0 +1,55 @@
+.tabs
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-start
+	flex-direction: column
+	font-size: 24px
+	flex-wrap: pre-wrap
+	height: 100%
+	// & > *
+	// 	margin-right: 20px
+	&__tabs
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-around
+		align-items: center
+		width: 100%
+	&__component
+		height: 100%
+		width: 100%
+		padding-top: 20px
+
+.tab
+	color: $fontColor
+	text-transform: uppercase
+	text-align: center
+	width: 100%
+	margin: 0 10px
+	cursor: pointer
+	position: relative
+	overflow: hidden
+	&.active
+		background-color: $fontColor
+		color: $mainBg
+		& > .tab__hidden
+			display: none
+	&__hidden
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		background-color: $fontColor
+		color: $mainBg
+		transition: all .3s ease-out;
+		top: 100%
+		left: 0
+	&:hover > .tab__hidden
+		top: 0
+	&__title
+    border-bottom: 2px solid #c7d5e0

@@ -1,0 +1,34 @@
+.side-info
+	position: absolute
+	right: 20px
+	top: 20px
+	color: $fontColor
+	// background-color: $fontColor
+	border-radius: 10px
+	cursor: pointer
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	&_inner
+		position: static
+		display: none
+	@media(max-width: 900px)
+		display: none
+		&_inner
+			display: flex
+
+.modal-link
+	margin-left: 20px
+	&_inner
+		margin: 0
+		display: none
+	@media(max-width: 900px)
+		display: none
+		&_inner
+			display: block !important
+			position: static
+			text-decoration: underline
+			margin-left: 20px
