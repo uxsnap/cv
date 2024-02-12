@@ -13,17 +13,17 @@
 </template>
 
 <script>
-import { randomRange } from '~/helpers';
+import { randomRange } from "~/helpers";
 
 export default {
   props: {
-    count: { type: Number, default: 0 }
+    count: { type: Number, default: 0 },
   },
-	data() {
+  data() {
     return {
       coins: [],
       coinsCount: 0,
-    }
+    };
   },
   mounted() {
     for (let i = 0; i < this.count; i++) {
@@ -46,12 +46,12 @@ export default {
       return {
         top: `${top}px`,
         left: `${left}px`,
-      }
+      };
     },
     coinGrab(ind) {
       this.coins[ind].toShow = false;
-      this.$emit('coin-grab', ind);
-    }
-  }
-}
+      this.$emit("coin-grab", ind);
+    },
+  },
+};
 </script>
