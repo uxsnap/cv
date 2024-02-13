@@ -1,4 +1,10 @@
 .vending
+	position: relative
+	width: 100%
+	height: 100%
+	max-width: 450px
+	max-height: 450px 
+
 	@media (max-width: 900px)
 		display: none !important
 		position: relative
@@ -16,6 +22,7 @@
 		max-width: 214px
 		max-height: 260px
 		pointer-events: none
+		position: absolute
 	&__glass
 		border-radius: none
 		background-color: lightblue
@@ -23,9 +30,10 @@
 	&__image
 		width: $maxSize
 		height: $maxSize
+		position: absolute
+		top: 0
 		left: 50%
 		transform: translateX(-50%)
-		bottom: 0
 		pointer-events: none
 		z-index: 50
 	&__coins
@@ -38,6 +46,7 @@
 		left: 50%
 		transform: translateX(-50%)
 		z-index: 50
+		position: absolute
 		img
 			width: 20px
 			height: 20px
@@ -45,7 +54,7 @@
 			margin-left: 8px
 	&__lever
 		position: absolute
-		left: 70%
+		left: 65%
 		bottom: 40px
 		display: flex
 		align-items: center

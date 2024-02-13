@@ -31,6 +31,7 @@ ul
 	display: flex
 	align-items: flex-start
 	height: 100%
+	width: 100%
 
 	.left, .right
 		flex-basis: 50%
@@ -38,12 +39,18 @@ ul
 	.right
 		height: 100%
 		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		@media(max-width: 900px)
+			display: none
+			
+	.left
+		padding: 20px
+		height: 100%
+		display: flex
+		flex-direction: column
+		@media(max-width: 900px)
+			flex-basis: 100%
+			padding: 0
 
-
-.left
-	padding: 20px
-	height: 100%
-	@media(max-width: 900px)
-		flex-basis: 100%
-		padding: 0
-		height: auto
